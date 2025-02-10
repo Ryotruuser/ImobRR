@@ -1,9 +1,27 @@
-.casas{
-    display: flex;
+.principal{
+    padding: 1em 0;
 }
-.swiper{
-    height: 200px;
-    border: none;
+.principal__titulo{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: .5em;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.swiper-wrapper{
+    margin-bottom: 1em;
+}
+
+.principal__imagem{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .swiper-button-next,.swiper-button-prev {
