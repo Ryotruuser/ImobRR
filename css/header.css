@@ -3,10 +3,9 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  /* From https://css.glass */
   background: rgba(255, 255, 255, 0.04);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 7px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -25,8 +24,14 @@
   display: none;
   position: absolute;
   flex-direction: column;
-  top: 100%;
+  top:108%;
   width: 60vw;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .lista-menu__titulo{
@@ -45,7 +50,6 @@
 .container {
   display: flex;
   align-items: center;
-  padding: em;
 }
 
 .container__botao {
