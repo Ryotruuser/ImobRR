@@ -5,10 +5,11 @@
 :root {
     --fonte-primaria: "Comfortaa";
     --preto: #000000;
+    --branco: #fff;
 }
 
 body{
-    background: rgb(250,241,224);
+    background: var(--branco);
     background: linear-gradient(90deg, rgba(250,241,224,1) 0%, rgba(224,237,240,1) 99%);
     font-family: var(--fonte-primaria);
 }

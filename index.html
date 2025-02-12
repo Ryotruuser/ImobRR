@@ -49,87 +49,45 @@
     </header>
 
     <main class="principal">
+
         <section class="principal__casas">
             <h2 class="principal__titulo">Casas Sustentáveis</h2>
-            <!-- Slider main container -->
-            <div class="swiper">
-                
-                <!-- Additional required wrapper -->
-                
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img src="assets/imob/casas/c1.svg" alt="imagem de casa" class="principal__imagem" width="400" height="300">
-                    </div>
+
+            <div class="swiper"><!--big card-->
                 <div class="swiper-pagination"></div>
-
-            </div>
-        </section>
-
-
-
-        <!--
-        <section class="principal__casas">
-            <h2 class="principal__titulo">Casas Sustentáveis</h2>
-             Slider main container 
-            <div class="swiper">
-                
-                 Additional required wrapper 
-                
                 <div class="swiper-wrapper">
                     
                     <div class="swiper-slide">
-                        <img src="assets/imob/casas/c1.svg" alt="imagem de casa" class="principal__imagem" width="400" height="300">
+                        <img src="assets/imob/casas/c1.svg" alt="imagem de casa" class="principal__imagem" width="400" height="400">
                     </div>
                     <div class="swiper-slide">
-                        <img src="assets/imob/casas/c2.svg" alt="imagem de casa" class="principal__imagem" width="400" height="300">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/imob/casas/c3.svg" alt="imagem de casa" class="principal__imagem" width="400" height="300">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/imob/casas/c4.svg" alt="imagem de casa" class="principal__imagem" width="400" height="300">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/imob/casas/c5.svg" alt="imagem de casa" class="principal__imagem" width="400" height="300">
+                        <img src="assets/imob/casas/c1.svg" alt="imagem de casa" class="principal__imagem" width="400" height="400">
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
-
-            </div>
-        </section>
-
-        <section class="principal__apartamentos">
-            <h2 class="principal__titulo">Belos Apartamentos</h2>
-            Slider main container 
-            <div class="swiper">
                 
-                 Additional required wrapper
-                
-                <div class="swiper-wrapper">
-                    Slides 
-                    <div class="swiper-slide">
-                        <img src="assets/imob/apartamentos/ap1.svg" alt="imagem de casa" class="principal__imagem" width="400" height="300">
+                <!--Card da imagem -->
+                <div class="img__card__info">
+                    <h2 class="img__card__titulo">Harmonia Residence</h2>
+                    <div>
+                        <h4 class="img__card__localizacao">
+                            <img src="assets/gps.svg" alt="icone de gps" class="img__localizacao__tagGps" width="20" height="15">
+                            Rua das Acácias, 12, Jardim dos Sonhos
+                        </h4>
+                        <hr>
+                        <div class="img__card__footer">
+                            <h3 class="img__card__preco">R$ 850.000,00</h3>
+                            <p class="img__footer__avaliacao__texto"><img src="assets/star2.svg" alt="" class="img__footer__avaliacao">4.7/5</p>
+                        </div>
+                        
                     </div>
-                    <div class="swiper-slide">
-                        <img src="assets/imob/apartamentos/ap2.svg" alt="imagem de casa" class="principal__imagem" width="400" height="300">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/imob/apartamentos/ap3.svg" alt="imagem de casa" class="principal__imagem" width="400" height="300">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/imob/apartamentos/ap4.svg" alt="imagem de casa" class="principal__imagem" width="400" height="300">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/imob/apartamentos/ap5.svg" alt="imagem de casa" class="principal__imagem" width="400" height="300">
-                    </div>
-
                 </div>
-                <div class="swiper-pagination"></div>
-
-            </div>
+                <!--Card da imagem -->
+                
+            </div><!--big card-->
+            
         </section>
-        -->
+
+
 
     </main>
 
@@ -138,10 +96,9 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            slidesPerView: 2,
-            spaceBetween: 20,
+        const swiperInterno = new Swiper('.swiper', {
+            // // Optional parameters
+            spaceBetween: 5,
             direction: 'horizontal',
             loop: true,
 
@@ -157,6 +114,7 @@
                 prevEl: '.swiper-button-prev',
             },
         });
+
     </script>
 </body>
 </html>

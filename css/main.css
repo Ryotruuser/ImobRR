@@ -1,5 +1,6 @@
 .principal{
     padding: 1em 0;
+    overflow: hidden;
 }
 .principal__titulo{
     text-align: center;
@@ -14,9 +15,7 @@
     -webkit-backdrop-filter: blur(2px);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
-.swiper-wrapper{
-    margin-bottom: 1em;
-}
+
 
 .principal__imagem{
     width: 100%;
@@ -24,6 +23,72 @@
     border-radius: 10px;
 }
 
-.swiper-button-next,.swiper-button-prev {
-    display: none;
+/* Swiper de dentro */
+
+.swiper{
+    z-index: 0;
+}
+
+.swiper-pagination{
+    margin-bottom: 90%;
+}
+
+.img__card__info{
+    position: absolute;
+    width: 90vw;
+    margin: 0 1.25em;
+    top: 65%;
+    z-index: 1;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--branco);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+}
+.img__card__info:hover{
+    background: rgba(255, 255, 255, 0.91);
+    color: var(--preto);
+}
+.img__card__titulo{
+    margin: .5em 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.img__card__localizacao{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 0.75em;
+}
+
+.img__card__preco{
+    margin: .25em;
+    font-size: 1.15em;
+    font-weight: 600;
+}
+
+.img__card__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img__footer__avaliacao__texto{
+    margin: .25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15em;
+    font-weight: 600;
+}
+
+/* Swiper de dentro */
+
+/* Swiper de fora inicio */
+
+.swiper-externo{
+    padding: 1em;
 }
