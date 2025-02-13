@@ -7,6 +7,10 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link 
+        href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" 
+        rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>ImobRR - Home</title>
@@ -53,40 +57,49 @@
         <section class="principal__casas">
             <h2 class="principal__titulo">Casas Sustentáveis</h2>
 
-            <div class="swiper"><!--big card-->
-                <div class="swiper-pagination"></div>
-                <div class="swiper-wrapper">
-                    
-                    <div class="swiper-slide">
-                        <img src="assets/imob/casas/c1.svg" alt="imagem de casa" class="principal__imagem" width="400" height="400">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/imob/casas/c1.svg" alt="imagem de casa" class="principal__imagem" width="400" height="400">
-                    </div>
-                </div>
-                
-                <!--Card da imagem -->
-                <div class="img__card__info">
-                    <h2 class="img__card__titulo">Harmonia Residence</h2>
-                    <div>
-                        <h4 class="img__card__localizacao">
-                            <img src="assets/gps.svg" alt="icone de gps" class="img__localizacao__tagGps" width="20" height="15">
-                            Rua das Acácias, 12, Jardim dos Sonhos
-                        </h4>
-                        <hr>
-                        <div class="img__card__footer">
-                            <h3 class="img__card__preco">R$ 850.000,00</h3>
-                            <p class="img__footer__avaliacao__texto"><img src="assets/star2.svg" alt="" class="img__footer__avaliacao">4.7/5</p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <!--Card da imagem -->
-                
-            </div><!--big card-->
+            
             
         </section>
-
+        <div class="splide" role="group" aria-label="Splide Basic HTML Example" data-splide='{"type":"loop","perPage":1}'>
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="swiper"><!--big card-->
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-wrapper">
+                                
+                                <div class="swiper-slide">
+                                    <img src="assets/imob/casas/c1.svg" alt="imagem de casa" class="principal__imagem" width="400" height="400">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/imob/casas/c2.svg" alt="imagem de casa" class="principal__imagem" width="400" height="400">
+                                </div>
+                            </div>
+                            
+                            <!--Card da imagem -->
+                            <div class="img__card__info">
+                                <h2 class="img__card__titulo">Harmonia Residence</h2>
+                                <div>
+                                    <h4 class="img__card__localizacao">
+                                        <img src="assets/gps.svg" alt="icone de gps" class="img__localizacao__tagGps" width="20" height="15">
+                                        Rua das Acácias, 12, Jardim dos Sonhos
+                                    </h4>
+                                    <hr>
+                                    <div class="img__card__footer">
+                                        <h3 class="img__card__preco">R$ 850.000,00</h3>
+                                        <p class="img__footer__avaliacao__texto"><img src="assets/star2.svg" alt="" class="img__footer__avaliacao">4.7/5</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!--Card da imagem -->
+                            
+                        </div><!--big card-->
+                      </li>
+                      
+                  </ul>
+            </div>
+          </div>
 
 
     </main>
@@ -94,6 +107,8 @@
     <footer>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiperInterno = new Swiper('.swiper', {
@@ -115,6 +130,18 @@
             },
         });
 
+    </script>
+    <script>
+        var splide = new Splide( '.splide', {
+        perPage: 1,
+        focus  : 0,
+        drag: false,
+        dragging: false,
+        dragged: false,
+        } );
+
+        splide.mount();
+        
     </script>
 </body>
 </html>

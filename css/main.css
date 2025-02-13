@@ -36,7 +36,7 @@
 .img__card__info{
     position: absolute;
     width: 90vw;
-    margin: 0 1.25em;
+    margin: 0 .75em;
     top: 65%;
     z-index: 1;
     /* From https://css.glass */
@@ -89,6 +89,7 @@
 
 /* Swiper de fora inicio */
 
-.swiper-externo{
-    padding: 1em;
+.splide__slide{
+    padding: .5em;
 }
+
