@@ -28,21 +28,38 @@
 .swiper-pagination{
     margin-bottom: 90%;
 }
-
-.swiper__icons{
+.input__like__box{
+    position: absolute;
+    z-index: 3;
+    top: 8%;
+    right: 7%;
+    opacity: 0%;
+    border: 1px solid red;
+    height:  1.5em;
+}
+.coracao{
     margin: 1em 0;
     position: absolute;
     z-index: 2;
+    top: 2%;
     right: 5%;
 }
 
-.swiper__icons__img{
+.swiper__like__img{
     width: 2.2em;
 }
 
 .coracaocheio{
     display: none;
 }
+.input__like__box:checked ~ .coracaovazio {
+    display: none;
+}
+.input__like__box:checked ~ .coracaocheio {
+    display: inline;
+}
+
+
 
 .img__card__info{
     position: absolute;
