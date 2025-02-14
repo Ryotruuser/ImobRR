@@ -32,7 +32,20 @@
 .swiper-pagination{
     margin-bottom: 90%;
 }
+.swiper__icons{
+    margin: 1em 0;
+    position: absolute;
+    z-index: 9999;
+    right: 5%;
+}
 
+
+.swiper__icons__img{
+    width: 2.2em;
+}
+.coracaocheio{
+    display: none;
+}
 .img__card__info{
     position: absolute;
     width: 90vw;

@@ -63,8 +63,12 @@
 
                             <div class="swiper"><!--big card--> 
                                 <div class="swiper-pagination"></div>
+                                <!-- <a href="https://www.flaticon.com/br/icones-gratis/coracao" title="coração ícones">Coração ícones criados por Kiranshastry https://www.flaticon.com/br/icone-gratis/link-externo_8182966- Flaticon</a> -->
+                                <div class="swiper__icons">
+                                    <img class="swiper__icons__img coracaovazio" id="emptyHeart" src="assets/favimgvazio.png" alt="icone de coracao" onclick="like()">
+                                    <img class="swiper__icons__img coracaocheio" id="fullHeart" src="assets/favimgcheio.png" alt="icone de coracao" onclick="dislike()">
+                                </div>
                                 <div class="swiper-wrapper">
-                                    
                                     <div class="swiper-slide">
                                         <img src="assets/imob/casas/casa1/c1.svg" alt="imagem de casa" class="principal__imagem" width="400" height="400">
                                     </div>
@@ -330,6 +334,7 @@
 
     </footer>
 
+    <script src="js/frufru.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
