@@ -55,6 +55,18 @@
     font-size: 1.2em;
     font-weight: 700;
     text-align: center;
+    text-transform: capitalize;
+}
+
+.img__card__info__link{
+    text-decoration: none;
+}
+
+.img__card__info__link:hover{
+    color: var(--preto) !important;
+}
+.img__card__info__link:visited{
+    color:var(--branco);
 }
 
 .img__card__localizacao{
@@ -92,4 +104,3 @@
 .splide__slide{
     padding: .5em;
 }
-
