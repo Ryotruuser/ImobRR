@@ -1,3 +1,5 @@
  section bannaer
  img e a frase abaixo
  A chance de encontrar o imóvel dos sonhos
+
+contato com a central de atendimento
