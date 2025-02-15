@@ -7,10 +7,12 @@
     font-size: 1.2em;
     font-weight: 700;
     text-transform: uppercase;
+    margin: auto;
+    width: 80%;
     padding: .5em;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.02);
-    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -28,7 +30,7 @@
     height: 1px;
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #000, rgba(0, 0, 0, 0));
     border: 0;
-    margin: 1em 0;
+    margin: 2em 0;
 }
 
 /* Swiper de dentro */
