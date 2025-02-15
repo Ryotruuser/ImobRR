@@ -8,12 +8,14 @@
     --preto: #000000;
     --branco: #fff;
     --cinza: #e6ebed;
-    --azulEscuro: #AAB7B8 ;
+    --corPrimaria: linear-gradient(90deg, rgba(250,241,224,1) 0%, rgba(224,237,240,1) 99%);
+    --amarelo: rgb(250,241,224) ;
     --azulClaro: rgb(224,237,240);
+    --azulEscuro: #AAB7B8 ;
 }
 
 body{
     background: var(--branco);
-    background: linear-gradient(90deg, rgba(250,241,224,1) 0%, rgba(224,237,240,1) 99%);
+    background: var(--corPrimaria);
     font-family: var(--fonte-primaria);
 }

@@ -4,3 +4,49 @@
     background: var(--azulClaro);
 }
 
+.footer__lista__titulo{
+    font: 1.5em;
+    font-weight: 600;
+    padding-bottom: .25em;
+    margin: 2em 0 0 0;
+}
+
+.footer__lista__titulo__frufru{
+    border: 1px solid var(--azulEscuro);
+    width: 10%;
+    opacity: 60%;
+    margin: 0 0 1em 0;
+}
+
+.footer__lista__item{
+    margin: 1em 0 0 1em;
+}
+
+.footer__lista__link{
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.footer__lista__link:visited{
+    color: var(--preto);
+}
+
+.last__frufru{
+    margin: 0;
+}
+
+.footer__social{
+    display: flex;
+    
+}
+
+.footer__legal{
+    margin: 0;
+    background: var(--amarelo);
+}
+
+.secao__legal__diretos{
+    margin: 2em 1em;
+    opacity: 50%;
+    font-size: 1em;
+}

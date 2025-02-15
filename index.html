@@ -16,6 +16,7 @@
     <title>ImobRR - Home</title>
 </head>
 <body>
+    
     <header class="cabecalho">
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
@@ -54,7 +55,7 @@
 
     <main class="principal">
 
-        <section class="principal__casas"> <!--todas imagens de casas foram retiradas do site "https://ecoshack.com/sustainable-homes/" | all home pictures are from https://ecoshack.com/sustainable-homes/-->
+        <section id="casas" class="principal__casas"> <!--todas imagens de casas foram retiradas do site "https://ecoshack.com/sustainable-homes/" | all home pictures are from https://ecoshack.com/sustainable-homes/-->
             <h2 class="principal__titulo">Casas Sustentáveis</h2>
             <div class="splide" id="splide-casas" role="group" aria-label="Splide Basic HTML Example" data-splide='{"type":"loop","perPage":1}'>
                 <div class="splide__track">
@@ -385,7 +386,7 @@
 
         <hr class="principal__divisior__secao">
 
-        <section class="principal__apartamentos"> <!--todas imagens de casas foram retiradas do site "https://ecoshack.com/sustainable-homes/" | all home pictures are from https://ecoshack.com/sustainable-homes/-->
+        <section id="apartamentos" class="principal__apartamentos"> <!--todas imagens de casas foram retiradas do site "https://ecoshack.com/sustainable-homes/" | all home pictures are from https://ecoshack.com/sustainable-homes/-->
             <h2 class="principal__titulo">Apartamentos Modernos</h2>
             <div class="splide" id="splide-apartamentos" role="group" aria-label="Splide Basic HTML Example" data-splide='{"type":"loop","perPage":1}'>
                 <div class="splide__track">
@@ -586,7 +587,7 @@
 
         <hr class="principal__divisior__secao">
 
-        <section class="principal__lotes"> <!--todas imagens de casas foram retiradas do site "https://ecoshack.com/sustainable-homes/" | all home pictures are from https://ecoshack.com/sustainable-homes/-->
+        <section id="lotes" class="principal__lotes"> <!--todas imagens de casas foram retiradas do site "https://ecoshack.com/sustainable-homes/" | all home pictures are from https://ecoshack.com/sustainable-homes/-->
             <h2 class="principal__titulo">Lotes Diversificados</h2>
             <div class="splide" id="splide-lotes" role="group" aria-label="Splide Basic HTML Example" data-splide='{"type":"loop","perPage":1}'>
                 <div class="splide__track">
@@ -784,7 +785,7 @@
 
         <hr class="principal__divisior__secao">
 
-        <section class="principal__galpao"> <!--todas imagens de casas foram retiradas do site "https://ecoshack.com/sustainable-homes/" | all home pictures are from https://ecoshack.com/sustainable-homes/-->
+        <section id="galpao" class="principal__galpao"> <!--todas imagens de casas foram retiradas do site "https://ecoshack.com/sustainable-homes/" | all home pictures are from https://ecoshack.com/sustainable-homes/-->
             <h2 class="principal__titulo">Galpões para alugar</h2>
             <div class="splide" id="splide-galpao" role="group" aria-label="Splide Basic HTML Example" data-splide='{"type":"loop","perPage":1}'>
                 <div class="splide__track">
@@ -979,69 +980,100 @@
             
         </section>
         
-
-
-
-
-
     </main>
 
     <footer>
         <section class="footer__secao">
             <ul class="footer__lista">
                 <h2 class="footer__lista__titulo">Encontre seu imóvel</h2>
+                <div class="footer__lista__titulo__frufru"></div>
                 <li class="footer__lista__item">
-                    <a class="footer__lista__link" href="">Casas</a>
+                    <a class="footer__lista__link" href="#casas">Casas</a>
                 </li>
                 <li class="footer__lista__item">
-                    <a class="footer__lista__link" href="">Apartamentos</a>
+                    <a class="footer__lista__link" href="#apartamentos">Apartamentos</a>
                 </li>
                 <li class="footer__lista__item">
-                    <a class="footer__lista__link" href="">Lotes</a>
+                    <a class="footer__lista__link" href="#lotes">Lotes</a>
                 </li>
                 <li class="footer__lista__item">
-                    <a class="footer__lista__link" href="">Galpão</a>
+                    <a class="footer__lista__link" href="#galpao">Galpão</a>
                 </li>
             </ul>
 
             <ul class="footer__lista">
                 <h2 class="footer__lista__titulo">Corporativo</h2>
+                <div class="footer__lista__titulo__frufru"></div>
                 <li class="footer__lista__item">
-                    <a class="footer__lista__link" href="">Mapa do site</a>
+                    <a class="footer__lista__link" href="#!">Mapa do site</a>
                 </li>
                 <li class="footer__lista__item">
-                    <a class="footer__lista__link" href="">Trabalhe conosco</a>
+                    <a class="footer__lista__link" href="#!">Trabalhe conosco</a>
                 </li>
                 <li class="footer__lista__item">
-                    <a class="footer__lista__link" href="">Ajuda</a>
+                    <a class="footer__lista__link" href="#!">Ajuda</a>
                 </li>
                 <li class="footer__lista__item">
-                    <a class="footer__lista__link" href="">Ouvidoria</a>
+                    <a class="footer__lista__link" href="#!">Ouvidoria</a>
                 </li>
             </ul>
 
             <ul class="footer__lista">
                 <h2 class="footer__lista__titulo">Parceiros</h2>
+                <div class="footer__lista__titulo__frufru"></div>
                 <li class="footer__lista__item">
-                    <a class="footer__lista__link" href="">Anunciar imóvel</a>
+                    <a class="footer__lista__link" href="#!">Anunciar imóvel</a>
                 </li>
                 <li class="footer__lista__item">
-                    <a class="footer__lista__link" href="">Solicitar Avaliação de imóvel</a>
+                    <a class="footer__lista__link" href="#!">Solicitar Avaliação de imóvel</a>
                 </li>
                 <li class="footer__lista__item">
-                    <a class="footer__lista__link" href="">Avaliar corretor</a>
+                    <a class="footer__lista__link" href="#!">Avaliar corretor</a>
                 </li>
                 <li class="footer__lista__item">
-                    <a class="footer__lista__link" href="">Avalir imóvel</a>
+                    <a class="footer__lista__link" href="#!">Avaliar imóvel</a>
                 </li>
+            </ul>
+
+            <ul class="footer__lista ">
+                <h2 class="footer__lista__titulo">Rede social</h2>
+                <!-- Icones by Pixel perfect, Laisa Islam Ani e google -->
+                <div class="footer__lista__titulo__frufru last__frufru"></div>
+                <span class="footer__social">
+                    <li class="footer__lista__item">
+                        <a class="footer__lista__link" href="https://www.linkedin.com/in/ryotruuser/" target="_blank"><img clas="footer__social__icone" src="assets/linkedinicone.png" alt="icone do linkedin" width="20" height="20"></a>
+                    </li>
+                    <li class="footer__lista__item">
+                        <a class="footer__lista__link" href="https://github.com/Ryotruuser" target="_blank"><img clas="footer__social__icone" src="assets/github.png"  alt="icone do github" width="20" height="20"></a>
+                    </li>
+                </span>
+
+
+
             </ul>
 
         </section>
 
+        <section class="footer__secao footer__legal">
+            <ul class="footer__lista">
+                <li class="footer__lista__item">
+                    <a class="footer__lista__link" href="#!">Termos de uso</a>
+                </li>
+                <li class="footer__lista__item">
+                    <a class="footer__lista__link" href="#!">Uso de dados</a>
+                </li>
+                <li class="footer__lista__item">
+                    <a class="footer__lista__link" href="#!">Politica de privacidade</a>
+                </li>
+                <li class="footer__lista__item">
+                    <a class="footer__lista__link" href="#!">Sobre</a>
+                </li>
+            </ul>
+
+            <p class="secao__legal__diretos">© 2025 ImobRR. Todos os direitos reservados</p>
+
+        </section>
     </footer>
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
