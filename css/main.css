@@ -90,6 +90,7 @@
     background: rgba(255, 255, 255, 0.91);
     color: var(--preto);
 }
+
 .img__card__titulo{
     margin: .5em 0;
     font-size: 1.2em;
@@ -122,9 +123,16 @@
 }
 
 .img__card__preco{
+    display: flex;
+    align-items: flex-end;
     margin: .25em;
     font-size: 1.15em;
     font-weight: 600;
+}
+
+.img__card__preco__indicador{
+    font-size: 0.75em;
+    opacity: 50%;
 }
 
 .img__card__footer{
