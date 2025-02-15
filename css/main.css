@@ -14,8 +14,8 @@
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    
 }
-
 
 .principal__imagem{
     width: 100%;
@@ -23,11 +23,20 @@
     border-radius: 10px;
 }
 
+
+.principal__divisior__secao{
+    height: 1px;
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #000, rgba(0, 0, 0, 0));
+    border: 0;
+    margin: 1em 0;
+}
+
 /* Swiper de dentro */
 
 .swiper-pagination{
     margin-bottom: 90%;
 }
+
 .input__like__box{
     position: absolute;
     z-index: 3;
@@ -37,6 +46,7 @@
     border: 1px solid red;
     height:  1.5em;
 }
+
 .coracao{
     margin: 1em 0;
     position: absolute;
@@ -52,14 +62,14 @@
 .coracaocheio{
     display: none;
 }
+
 .input__like__box:checked ~ .coracaovazio {
     display: none;
 }
+
 .input__like__box:checked ~ .coracaocheio {
     display: inline;
 }
-
-
 
 .img__card__info{
     position: absolute;
@@ -136,4 +146,10 @@
 
 .splide__slide{
     padding: .5em;
+}
+
+/* apartamentos */
+
+.principal__aps{
+    border: 1px solid red;
 }

@@ -56,7 +56,7 @@
 
         <section class="principal__casas"> <!--todas imagens de casas foram retiradas do site "https://ecoshack.com/sustainable-homes/" | all home pictures are from https://ecoshack.com/sustainable-homes/-->
             <h2 class="principal__titulo">Casas Sustentáveis</h2>
-            <div class="splide" role="group" aria-label="Splide Basic HTML Example" data-splide='{"type":"loop","perPage":1}'>
+            <div class="splide" id="splide-casas" role="group" aria-label="Splide Basic HTML Example" data-splide='{"type":"loop","perPage":1}'>
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide"><!--inicio do splide slide-->
@@ -383,6 +383,86 @@
             
         </section>
 
+        <hr class="principal__divisior__secao">
+
+        <section class="principal__apartamentos"> <!--todas imagens de casas foram retiradas do site "https://ecoshack.com/sustainable-homes/" | all home pictures are from https://ecoshack.com/sustainable-homes/-->
+            <h2 class="principal__titulo">Apartamentos Modernos</h2>
+            <div class="splide" id="splide-apartamentos" role="group" aria-label="Splide Basic HTML Example" data-splide='{"type":"loop","perPage":1}'>
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><!--inicio do splide slide-->
+
+                            <div class="swiper"><!--big card--> 
+                                <div class="swiper-pagination"></div>
+                                <!-- <a href="https://www.flaticon.com/br/icones-gratis/coracao" title="coração ícones">Coração ícones criados por Kiranshastry https://www.flaticon.com/br/icone-gratis/link-externo_8182966- Flaticon</a> -->
+                                <input type="checkbox" id="like" class="input__like__box">
+                                <label for="like" class="swiper__like__label"></label>
+                                <span class="coracao coracaovazio">
+                                    <img class="swiper__like__img"src="assets/favimgvazio.png" alt="icone de coracao vazio">
+                                </span>
+                                <span class="coracao coracaocheio">
+                                    <img class="swiper__like__img"src="assets/favimgcheio.png" alt="icone de coracao cheio">
+                                </span>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/imob/apartamentos/ap1/ap1.jpg" alt="imagem de apartamento" class="principal__imagem" width="400" height="400">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/imob/apartamentos/ap1/ap1i1.jpg"" alt="imagem de apartamento" class="principal__imagem" width="400" height="400">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/imob/apartamentos/ap1/ap1i2.jpg" alt="imagem de apartamento" class="principal__imagem" width="400" height="400">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/imob/apartamentos/ap1/ap1i3.jpg" alt="imagem de apartamento" class="principal__imagem" width="400" height="400">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/imob/apartamentos/ap1/ap1i4.jpg" alt="imagem de apartamento" class="principal__imagem" width="400" height="400">
+                                    </div>
+
+
+                                </div>
+                                
+                                <!--Card da imagem -->
+                                <div class="img__card__info">
+                                    <h2 class="img__card__titulo">Cobertura, de frente ao metro</h2>  
+                                    <div>
+                                        <h4 class="img__card__localizacao">
+                                            <img src="assets/gps.svg" alt="icone de gps" class="img__localizacao__tagGps" width="20" height="15">
+                                            Northenren Rd, Manchester, Uk
+                                            <a href="https://www.booking.com/Share-arPCDp" class="img_card_extlink" target="_blank">
+                                                <img src="assets/extlinkWhite.png" id="extLinkWhite" alt="icone do link externo" class="img__extlink__img img__extlink__img-white " width="20" height="20">
+                                                <img src="assets/extlinkBlack.png" id="extLinkBlack" alt="icone do link externo" class="img__extlink__img img__extlink__img-black" width="20" height="20">
+                                            </a>
+                                        </h4>
+                                        <hr>
+                                        <div class="img__card__footer">
+                                            <h3 class="img__card__preco">R$ 226.199,00</h3>
+                                            <p class="img__footer__avaliacao__texto"><img src="assets/star2.svg" alt="" class="img__footer__avaliacao">4.7/5</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <!--Card da imagem -->
+                                
+                            </div><!--big card-->
+                        
+                        </li><!--fim do splide slide-->  
+
+                        
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+
+
+        
+
 
 
 
@@ -392,12 +472,10 @@
     <footer>
 
     </footer>
-
-    <script src="js/frufru.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        const swiperInterno = new Swiper('.swiper', {
+        const swiper = new Swiper('.swiper', {
             // // Optional parameters
             spaceBetween: 5,
             direction: 'horizontal',
@@ -418,7 +496,7 @@
 
     </script>
     <script>
-        var splide = new Splide( '.splide', {
+        var splideApartamentos = new Splide( '#splide-apartamentos', {
         perPage: 1,
         focus  : 0,
         type  : 'fade',
@@ -427,7 +505,17 @@
         dragged: false,
         } );
 
-        splide.mount();
+        var splideCasas = new Splide( '#splide-casas', {
+        perPage: 1,
+        focus  : 0,
+        type  : 'fade',
+        drag: false,
+        dragging: false,
+        dragged: false,
+        } );
+
+        splideCasas.mount();
+        splideApartamentos.mount();
         
     </script>
 </body>
