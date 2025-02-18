@@ -88,15 +88,14 @@
   font-weight: 800;
 }
 
+.lista-menu__link:hover{
+  color: var(--azulMaisEscuro) ;
+}
 
 @media screen and (min-width: 768px){
   .cabecalho__categorias__lista, .cabecalho__categorias{
     display: flex;
     gap: .75em;
-  }
-
-  .lista-menu__link:hover{
-    color: rgb(48, 93, 104)
   }
   .menu__hamburguer{
     display: none;
