@@ -1,3 +1,5 @@
+
+
 .principal{
     padding: 1em 0;
     overflow: hidden;
@@ -73,7 +75,7 @@
 .principal__imagem{
     width: 100%;
     object-fit: cover;
-    border-radius: 10px;
+
 }
 
 
@@ -137,6 +139,7 @@
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.28);
+    cursor: pointer;
 }
 
 .img__card__info:hover{
@@ -206,7 +209,6 @@
 /* Swiper de dentro */
 
 /* Swiper de fora inicio */
-
 .splide__slide{
     padding: .5em;
 }
@@ -216,6 +218,7 @@
 .principal__aps{
     border: 1px solid red;
 }
+
 
 /* media 768px tablet */
 @media screen and (min-width: 768px){
@@ -246,5 +249,97 @@
     .principal__banner__titulo{
         text-align:center;
         line-height: 1.2em;
+    }
+    .swiper {
+        height: 50vh;
+        border-radius: 10px;
+    }
+    .principal__imagem{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .principal__banner__img{
+        width: 50%;
+    }
+    .img__card__info{
+        top:65%;
+    }
+    .input__like__box{
+        width: 30px;
+        top: 5%;
+        right: 5%;
+    }
+}
+
+/* media 1200 desktop/laptops */
+@media screen and (min-width: 1200px){
+
+    .principal__divisior__secao{
+        display: none;
+    }
+    .principal__casas, .principal__apartamentos, .principal__lotes, .principal__galpao{
+        width: 50%;
+        margin-top: 2em;
+    }
+
+    .principal__section__imoveis{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .img__card__info{
+        width: 40vw;
+        top: 65%;
+    }
+    
+}
+
+/* media 1600 desktop/laptops */
+@media screen and (min-width: 1600px){
+
+    .principal__banner__img{
+        width: 30%;
+    }
+    .principal__banner__input{
+
+        width: 20%;
+    }
+    .principal__divisior__secao{
+        display: none;
+    }
+    .principal__casas, .principal__apartamentos, .principal__lotes, .principal__galpao{
+        width: 50%;
+        margin-top: 2em;
+    }
+
+    .swiper {
+        height: 50vh;
+        border-radius: 10px;
+    }
+    .principal__imagem{
+        height: 100%;
+        object-fit: cover;
+    }
+    .ajuste__img{
+        height: 100%;
+        object-position: 0% 90%;
+    }
+    .principal__section__imoveis{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .img__card__info{
+        width: 80%;
+    }
+
+    .input__like__box{
+        right: 5%;
+        width: 30px;
+        top: 6%;
+        cursor: pointer;
+
     }
 }
