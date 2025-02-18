@@ -85,9 +85,12 @@
 }
 
 /* Swiper de dentro */
-
+.swiper{
+    display: flex;
+    justify-content: center;
+}
 .swiper-pagination{
-    margin-bottom: 90%;
+    margin-bottom: 43vh;
 }
 
 .input__like__box{
@@ -127,16 +130,15 @@
 .img__card__info{
     position: absolute;
     width: 90vw;
-    margin: 0 .75em;
     top: 65%;
     z-index: 1;
-    /* From https://css.glass */
     background: rgba(255, 255, 255, 0.1);
     color: var(--branco);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.28);
 }
+
 .img__card__info:hover{
     background: rgba(255, 255, 255, 0.91);
     color: var(--preto);
@@ -213,4 +215,36 @@
 
 .principal__aps{
     border: 1px solid red;
+}
+
+/* media 768px tablet */
+@media screen and (min-width: 768px){
+    /* secao banner */
+    .principal__banner{
+        margin: 2em;
+        margin: 1px solid red;
+    }
+
+    .principal__banner__img{
+        margin-top: 2em;
+        width: 50%;
+    }
+
+    .principal__banner__input{
+        width: 40%;
+    }
+
+    /* secao imoveis */
+    .img__card__info{
+        width: 60vw;
+    }
+
+}
+
+/* media 1024px tablet */
+@media screen and (min-width: 1024px){
+    .principal__banner__titulo{
+        text-align:center;
+        line-height: 1.2em;
+    }
 }
