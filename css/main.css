@@ -38,8 +38,20 @@
     outline: none;
     border: 1px solid var(--cinza);
 }
+
 .principal__banner__input::placeholder{
     font-size: 1.2em;
+}
+
+.principal__banner__btn{
+    text-decoration: none;
+    background-color: var(--cinza);
+    padding: 1em;
+    color: var(--preto);
+    border-radius: 20px;
+    font-size: 0.75em;
+    margin: 1em 0;
+    border: 1px solid rgba(0, 0, 0, .1);
 }
 
 .principal__titulo{
