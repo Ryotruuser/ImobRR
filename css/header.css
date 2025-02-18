@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: fixed;
+  width: 100%;
   background: rgba(255, 255, 255, 0.04);
   border-radius: 10px;
   box-shadow: 0 0px 7px rgba(0, 0, 0, 0.1);
@@ -10,6 +11,7 @@
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   z-index: 999;
+
 }
 
 .cabecalho__menu-hamburguer {
@@ -93,6 +95,9 @@
 }
 
 @media screen and (min-width: 768px){
+  .cabecalho {
+    position: relative;
+  }
   .cabecalho__categorias__lista, .cabecalho__categorias{
     display: flex;
     gap: .75em;
