@@ -10,9 +10,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    
 }
+
 .principal__banner__titulo{
     color: black;
     width: 100%;

@@ -4,7 +4,7 @@
   align-items: center;
   position: relative;
   background: rgba(255, 255, 255, 0.04);
-  border-radius: 16px;
+  border-radius: 10px;
   box-shadow: 0 0px 7px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -20,7 +20,12 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
+.cabecalho__logo__container{
+  display: none;
+}
+.cabecalho__categorias{
+  display: none;
+}
 .lista-menu {
   display: none;
   position: absolute;
@@ -81,4 +86,24 @@
 
 .cabecalho__logo__text-negrito {
   font-weight: 800;
+}
+
+
+@media screen and (min-width: 768px){
+  .cabecalho__categorias__lista, .cabecalho__categorias{
+    display: flex;
+    gap: .75em;
+  }
+
+  .lista-menu__link:hover{
+    color: rgb(48, 93, 104)
+  }
+  .menu__hamburguer{
+    display: none;
+  }
+
+  .cabecalho__logo__container{
+    display: flex;
+    align-items: center;
+  }
 }
