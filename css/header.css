@@ -2,8 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  width: 100%;
+  position: relative;
   background: rgba(255, 255, 255, 0.04);
   border-radius: 10px;
   box-shadow: 0 0px 7px rgba(0, 0, 0, 0.1);
@@ -94,10 +93,14 @@
   color: var(--azulMaisEscuro) ;
 }
 
-@media screen and (min-width: 768px){
-  .cabecalho {
-    position: relative;
+@media screen and (max-width: 480px){
+  .cabecalho{
+      position: fixed;
+      width: 100%;
   }
+}
+
+@media screen and (min-width: 768px){
   .cabecalho__categorias__lista, .cabecalho__categorias{
     display: flex;
     gap: .75em;
